@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: web-server-deployment
+  name: web-server-deployment-1
   namespace: my-ns
   labels:
-    app: nginx
+    app: nginx-1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: nginx-1
   template:
     metadata:
       labels:
-        app: nginx
+        app: nginx-1
     spec:
       nodeSelector:
         label1: "True"
       containers:
-      - name: nginx
+      - name: nginx-1
         image: nginx
         volumeMounts:
         - mountPath: /usr/share/nginx/html
