@@ -22,7 +22,7 @@ spec:
         image: busybox
         command: ["/bin/sh", "-c", "sleep infinity"]
         volumeMounts:
-        - mountPath: /usr/share/nginx/html
+        - mountPath: /usr/myshare
           name: mypvc
       volumes:
       - name: mypvc
