@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: my-pv
+spec:
+  storageClassName: ""
+  capacity:
+    storage: 1Ti
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  volumeMode: Filesystem
+  csi:
+    driver: filestore.csi.storage.gke.io
+    volumeHandle: "modeInstance/us-central1-c/pvc-2195c1a0-a80c-405e-91a1-2186c3cc0bbb/vol1"
+    volumeAttributes:
+      ip: 10.73.118.242
+      volume: vol1
+  claimRef:
+    name: my-pvc
+    namespace: my-ns
