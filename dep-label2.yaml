@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: web-server-deployment-2
+  name: dep-2
   namespace: my-ns
   labels:
-    app: nginx-2
+    app: app-2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx-2
+      app: app-2
   template:
     metadata:
       labels:
-        app: nginx-2
+        app: app-2
     spec:
       nodeSelector:
         label2: "True"
       containers:
-      - name: nginx-2
-        image: nginx
+      - name: app-2
+        image: busybox
         volumeMounts:
         - mountPath: /usr/share/nginx/html
           name: mypvc
