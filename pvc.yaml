@@ -9,4 +9,4 @@ spec:
   storageClassName: standard-rwx
   resources:
     requests:
-      storage: 1Ti
+      storage: 10Gi
