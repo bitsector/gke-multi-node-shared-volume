@@ -53,7 +53,7 @@ kubectl get nodes | grep dataplane-pool | cut -d' ' -f1
 # gke-my-cluster-dataplane-pool-85bedef0-8wfb
 # gke-my-cluster-dataplane-pool-85bedef0-pd5t
 ```
-### label the nodes with different labes:
+### label the nodes with different labels:
 ```bash
 kubectl label node gke-my-cluster-dataplane-pool-85bedef0-8wfb label1=True
 ```
