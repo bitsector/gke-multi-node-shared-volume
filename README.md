@@ -77,7 +77,7 @@ kubectl get pods,deployments -n my-ns
 ```bash
 # NAME                         READY   STATUS    RESTARTS   AGE
 # pod/dep-1-5c4dcfb84d-29jz4   1/1     Running   0          47s
-# pod/dep-2-858b96f697-7kmxr   1/1     Running   0          47s A
+# pod/dep-2-858b96f697-7kmxr   1/1     Running   0          47s
 # NAME                    READY   UP-TO-DATE   AVAILABLE   AGE
 # deployment.apps/dep-1   1/1     1            1           48s
 # deployment.apps/dep-2   1/1     1            1           47s
