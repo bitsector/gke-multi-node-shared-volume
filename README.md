@@ -113,3 +113,20 @@ cat hello.txt
 ```bash
 # hello from node 1
 ```
+
+# Cleanup Section
+```bash
+kubectl delete -f dep-label1.yaml -f dep-label2.yaml -n my-ns
+```
+```bash
+kubectl delete -f pvc.yaml -n my-ns
+```
+```bash
+kubectl delete -f pv.yaml
+```
+```bash
+gcloud filestore instances delete $FILESTORE_INSTANCE_NAME --project=my-project --zone=us-central1-c -q
+```
+```bash
+kubectl delete namespace my-ns
+```
