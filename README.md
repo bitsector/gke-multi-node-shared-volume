@@ -82,11 +82,11 @@ kubectl get pods,deployments -n my-ns
 # deployment.apps/dep-1   1/1     1            1           48s
 # deployment.apps/dep-2   1/1     1            1           47s
 ```
-### Now ssh into the firs pod (running on the first node):
+### Now ssh into the first pod (running on the first node):
 ```bash
 kubectl exec -it -n my-ns pod/dep-1-5c4dcfb84d-29jz4 -- /bin/sh
 ```
-### Create some file with some text one the shared volume mounted at /usr/myshare:
+### Create some file with some text on the shared volume mounted at /usr/myshare:
 ```bash
 cd usr/myshare/
 ```
