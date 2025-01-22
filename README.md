@@ -1,6 +1,6 @@
 # Set up a GKE multi node shared volume with Filestore
 
-[]Full Article](https://bitsector.notion.site/GKE-ReadWriteMany-GKE-Filestore-experiment-181cfe2b2f5c80d3825bf20a2880299d)
+[Full Article](https://bitsector.notion.site/GKE-ReadWriteMany-GKE-Filestore-experiment-181cfe2b2f5c80d3825bf20a2880299d)
 
 ### Create a namespace:
 ```bash
